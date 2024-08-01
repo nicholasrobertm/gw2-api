@@ -5,7 +5,11 @@ require "json"
 RSpec.describe Gw2::Api::Characters do
   before do
     @client = Gw2::Api::Client.new(api_key: ENV.fetch("GW2_API_KEY", nil))
-    @character = JSON.parse(@client.characters.body)[0].gsub!(" ", "%20")
+    @character = JSON.parse(@client.characters.body)[0]
+    
+    if @character.include?(" ")
+      @character.gsub!(" ", "%20")
+    end
   end
 
   it "returns characters" do

@@ -1,0 +1,36 @@
+module Gw2
+  module Api
+    module GameMechanics
+      def jade_bots: -> Net::HTTP
+
+      def legendary_armory: -> Net::HTTP
+
+      def legends: -> Net::HTTP
+
+      def masteries: -> Net::HTTP
+
+      def mounts: -> Net::HTTP
+
+      def mount_skins: -> Net::HTTP
+
+      def mount_types: -> Net::HTTP
+
+      def outfits: -> Net::HTTP
+
+      def pets: -> Net::HTTP
+
+      def professions: -> Net::HTTP
+
+      def races: -> Net::HTTP
+
+      def skiffs: -> Net::HTTP
+
+      def skills: -> Net::HTTP
+
+      def specializations: -> Net::HTTP
+
+      def traits: -> Net::HTTP
+
+    end
+  end
+end
